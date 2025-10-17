@@ -1,0 +1,26 @@
+import React from "react";
+import Navbar from "../components/Navbar";
+import { assets } from "../assets/assets";
+
+const AboutUs = () => {
+  return (
+    <div
+      className="relative bg-black/50 z-10 mb-4 bg-cover  bg-center flex items-center w-full overflow-hidden h-[400px] sm:h-[500px] md:h-[600px]"
+      style={{ backgroundImage: "url('/background_img.jpeg')" }}
+      id="AboutUs"
+    >
+      <Navbar />
+      {/* Hero section   */}
+<div className='absolute inset-0 bg-black/50 z-10'></div>
+      <div className="relative w-full h-[70vh] z-20">
+        <div className="absolute sm:bottom-10 md:bottom-2 lg:bottom-4 left-10">
+          <h1 className="text-5xl font-bold text-white drop-shadow-lg">
+            About Us
+          </h1>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;
