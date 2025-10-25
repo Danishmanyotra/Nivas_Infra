@@ -12,12 +12,17 @@ const AboutUs = () => {
       <Navbar />
       {/* Hero section   */}
 <div className='absolute inset-0 bg-black/50 z-10'></div>
-      <div className="relative w-full h-[70vh] z-20">
+      {/* <div className="relative w-full h-[70vh] z-20">
         <div className="absolute sm:bottom-10 md:bottom-2 lg:bottom-4 left-10">
           <h1 className="text-5xl font-bold text-white drop-shadow-lg">
             About Us
           </h1>
         </div>
+      </div> */}
+       <div className="absolute bottom-6 sm:bottom-10 left-1/2 -translate-x-1/2 z-20  w-full px-4">
+        <h1 className="text-3xl sm:text-5xl font-bold text-white drop-shadow-lg">
+          About Us
+        </h1>
       </div>
     </div>
   );
