@@ -21,7 +21,8 @@ const Aboutfooter = lazy(() => import("./pages/Aboutfooter"));
 const App = () => {
   return (
     <Router>
-      <ToastContainer />
+      <div className='overflow-x-hidden'>
+        <ToastContainer />
       <Suspense
         fallback={
           <div className="text-center mt-20 text-lg font-semibold">
@@ -61,6 +62,7 @@ const App = () => {
           />
         </Routes>
       </Suspense>
+      </div>
     </Router>
   );
 };
