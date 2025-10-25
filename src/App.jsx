@@ -3,6 +3,9 @@ import React, { Suspense, lazy } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import ScrollToTop from "./components/ScrollToTop";
+
+
 // Lazy load pages and components
 const Header = lazy(() => import("./components/Header"));
 const About = lazy(() => import("./components/About"));
@@ -23,6 +26,7 @@ const App = () => {
     <Router>
       <div className='overflow-x-hidden'>
         <ToastContainer />
+        <ScrollToTop/>
       <Suspense
         fallback={
           <div className="text-center mt-20 text-lg font-semibold">
