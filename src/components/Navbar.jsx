@@ -62,15 +62,15 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Button */}
-        <button className="hidden md:inline-block bg-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-black font-semibold shadow-md hover:bg-gray-200 transition">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSePSRx7_OvqGvy3aVZN4h8iTMVc75oHjws_DBNbA_YIcKJUOg/viewform?usp=dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CONTACT US
-          </a>
-        </button>
+        <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLSePSRx7_OvqGvy3aVZN4h8iTMVc75oHjws_DBNbA_YIcKJUOg/viewform?usp=dialog"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:inline-block bg-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-black font-semibold shadow-md hover:bg-gray-200 transition text-center"
+>
+  CONTACT US
+</a>
+
 
         {/* Mobile Menu Icon */}
         <img
